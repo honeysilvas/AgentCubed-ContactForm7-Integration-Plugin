@@ -1,11 +1,9 @@
 # AgentCubed ContactForm7 Integration Plugin
-=================================
 
 This is a WordPress plugin that submits form submissions from ContactForm7 to AgentCubed using the AgentCubed API.
 
 
 # Details
-=================================
 
 Contributors: honeysilvas
 
@@ -18,20 +16,30 @@ Tags: ContactForm7, AgentCubed, API, integration, WordPress plugin
 =================================
 
 - Download AgentCubed-ContactForm7 Integration Plugin
+
 https://github.com/honeysilvas/AgentCubed-ContactForm7-Integration-Plugin
 
 - Open the "asset\config\config.php" file with a text editor (like Notepad) and add in your login information.
 
-	// Enter your login details here:
-	$credential = array(
-		"username" => "username",
-		"password" => "password",
-		"group_weblead_id" => "000000",
-		"notification_email" => "honeysilvas@gmail.com",
-		"lead_source_key" => "00000000-0000-0000-0000-000000000000",
-		"url" => "https://dataexchange.agentcubed.com/PortalService/PortalService.asmx",
-		"wsdl" => "https://dataexchange.agentcubed.com/PortalService/PortalService.asmx?wsdl",
-	);
+    // Enter your login details here:
+    
+    $credential = array(
+    
+        "username" => "username",
+	
+        "password" => "password",
+	
+        "group_weblead_id" => "000000",	
+	
+        "notification_email" => "silverhoneymedia@gmail.com",	
+	
+        "lead_source_key" => "00000000-0000-0000-0000-000000000000",	
+	
+        "url" => "https://dataexchange.agentcubed.com/PortalService/PortalService.asmx",	
+	
+        "wsdl" => "https://dataexchange.agentcubed.com/PortalService/PortalService.asmx?wsdl",	
+	
+    );
 
 - Add additional fields in the XML file.
 
@@ -45,7 +53,8 @@ https://github.com/honeysilvas/AgentCubed-ContactForm7-Integration-Plugin
 	On the asset/function/include.php file, add the name of the fields to the $field array.  This sets them to "" (blank) if the variable is not set to avoid variable not set errors.
 
 	// Set empty values for unset fields.
-	$field = array( "plan", "your_name", "your_last", "your_email", "your_phone", "your_zipcode", "your_dfb", "your_state", "your_city" );	
+	
+    $field = array( "plan", "your_name", "your_last", "your_email", "your_phone", "your_zipcode", "your_dfb", "your_state", "your_city" );	
 	
 - Install the Plugin
 Upload the entire folder to the '/wp-content/plugins/' directory of your WordPress installation.
@@ -64,8 +73,6 @@ https://codex.wordpress.org/Managing_Plugins#Manual_Plugin_Installation
 
 # How it Works
 
-============================
-
 The plugin uses the wpcf7_before_send_mail hook that is triggered when a user submits a form.
  
 The plugin gets the form data and formats it to an XML format.
@@ -77,8 +84,6 @@ In case of error, the form data gets emailed to the email specified in the notif
 
 
 # References: 
-
-============================
 
 AgentCubed Documentation
 https://portal.agentcubed.com/webshares/_media/api%20documentation/AgentCubed%20DataExchange%20V2%20Sample.zip
