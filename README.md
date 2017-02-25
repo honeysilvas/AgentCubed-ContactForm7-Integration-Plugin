@@ -8,13 +8,21 @@ This is a WordPress plugin that submits form submissions from ContactForm7 to th
 =================================
 
 Contributors: honeysilvas
+
 Donate link: http://silverhoneymedia.com
+
 Tags: ContactForm7, AgentCubed, API, integration
+
 Requires at least: 4.0
+
 Tested up to: 4.7.1
+
 Stable tag: 0.0.1
+
 License: GPLv2 or later
+
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
 
 
 
