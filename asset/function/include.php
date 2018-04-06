@@ -22,7 +22,7 @@ function agentcubed_submit_data( $data ){
 				$message .= $key . ": " . $value . "<br />"; 
 			}
 
-			wp_mail( $data[ "credential" ][ "notification_email" ], "New Lead, not added succesfully to AgentCubed", "This new lead was not added succesfully to AgentCubed.  Please add this lead to AgentCubed manually.<br />" . $message );
+			wp_mail( $data[ "credential" ][ "notification_email" ], "New Lead, not added successfully to AgentCubed", "This new lead was not added successfully to AgentCubed.  Please add this lead to AgentCubed manually.<br />" . $message );
 		}
 	}
 }
